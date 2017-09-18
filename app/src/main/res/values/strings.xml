@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BseaApplication</string>
+    <string name="bottomnavigationbar_title0">首页</string>
+    <string name="bottomnavigationbar_title1">分类</string>
+    <string name="bottomnavigationbar_title2">购物车</string>
+    <string name="bottomnavigationbar_title3">资讯</string>
+    <string name="bottomnavigationbar_title4">个人中心</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:monkey="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="47dip"
+    android:clipChildren="false">
+
+
+    <RadioGroup
+        android:id="@+id/bottomnavigationbar.radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bottomnavigationbar.tab0"
+            style="@style/bottomnavigationbar_style"
+            android:drawableTop="@drawable/bottomnavigationbar_logo0"
+            android:tag="tab0"
+            android:text="@string/bottomnavigationbar_title0" />
+
+        <RadioButton
+            android:id="@+id/bottomnavigationbar.tab1"
+            style="@style/bottomnavigationbar_style"
+            android:drawableTop="@drawable/bottomnavigationbar_logo1"
+            android:tag="tab1"
+            android:text="@string/bottomnavigationbar_title1" />
+
+        <RadioButton
+            android:id="@+id/bottomnavigationbar.tab2"
+            style="@style/bottomnavigationbar_style"
+            android:drawableTop="@drawable/bottomnavigationbar_logo2"
+            android:tag="tab2"
+            android:text="@string/bottomnavigationbar_title2" />
+
+        <RadioButton
+            android:id="@+id/bottomnavigationbar.tab3"
+            style="@style/bottomnavigationbar_style"
+            android:drawableTop="@drawable/bottomnavigationbar_logo3"
+            android:tag="tab3"
+            android:text="@string/bottomnavigationbar_title3" />
+
+        <RadioButton
+            android:id="@+id/bottomnavigationbar.tab4"
+            style="@style/bottomnavigationbar_style"
+            android:drawableTop="@drawable/bottomnavigationbar_logo4"
+            android:tag="tab4"
+            android:text="@string/bottomnavigationbar_title4" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <com.dk.basepack.bseaapplication.weight.DragBubbleView
+                android:id="@+id/dragBubbleView_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="1dp"
+                monkey:bubbleColor="#ff0000"
+                monkey:bubbleRadius="11dp"
+                monkey:text="99+"
+                monkey:textColor="#ffffff"
+                monkey:textSize="10sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</FrameLayout>
